@@ -1,0 +1,85 @@
+/* Partner.css */
+.partner-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.video-section {
+  margin-bottom: 40px;
+}
+
+.partner-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner-card {
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-btn {
+  background-color: #fff;
+  color: #003366; /* Adjust based on card color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.partner-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+}
+
+.back-btn {
+  background-color: #f44336;
+  color : #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.outcomes {
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #333;
+}

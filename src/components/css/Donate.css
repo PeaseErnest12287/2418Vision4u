@@ -1,0 +1,363 @@
+/* Base Styles */
+.donate-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.donate-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.donate-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.mission-statement {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Testimonial */
+.testimonial {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #3498db;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial footer {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Tabs */
+.donation-tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: #2c3e50;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #3498db;
+}
+
+/* Donation Cards */
+.donation-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.amount-presets {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.amount-option {
+  padding: 0.75rem 1.25rem;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.amount-option:hover {
+  background: #e9ecef;
+}
+
+.amount-option:active {
+  background: #dee2e6;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #555;
+}
+
+.donation-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.donation-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.yearly-amount {
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-style: italic;
+  margin-top: -0.5rem;
+}
+
+/* Payment Section */
+.payment-section {
+  margin: 2rem 0;
+}
+
+.payment-section h4 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.payment-option.selected {
+  border-color: #3498db;
+  background-color: #f0f7fd;
+}
+
+.payment-option input {
+  margin-right: 0.5rem;
+}
+
+.payment-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paypal-icon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg');
+}
+
+.credit-card-icon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg');
+  background-size: 80%;
+}
+
+/* Credit Card Form */
+.credit-card-form {
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Donate Button */
+.donate-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.donate-btn:hover {
+  background: #2980b9;
+}
+
+.donate-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Impact Meter */
+.impact-meter {
+  margin-top: 2rem;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #27ae60;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+/* Thank You Modal */
+.thank-you-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.thank-you-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thank-you-modal h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.thank-you-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.share-btn, .return-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+}
+
+.share-btn:hover {
+  background: #2980b9;
+}
+
+.return-btn {
+  background: white;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.return-btn:hover {
+  background: #f0f7fd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .donate-container {
+    padding: 1rem;
+  }
+  
+  .donation-tabs {
+    flex-direction: column;
+  }
+  
+  .payment-methods {
+    flex-direction: column;
+  }
+  
+  .thank-you-actions {
+    flex-direction: column;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
